@@ -51,7 +51,7 @@
 
 Intro and winner scenes can also have the vc overlay bottom left if needed
 
-Add a **300ms `linear horizontal` luma wipe** transition between the scenes with **`0.05`** smoothness
+Add a `300ms` `linear horizontal` luma wipe transition between the scenes with `0.05` smoothness
 
 ### Interacting with the mappool
 - Left click: left (red) team pick
