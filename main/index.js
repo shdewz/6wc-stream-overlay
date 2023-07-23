@@ -282,10 +282,11 @@ socket.onmessage = async event => {
 			scores.push({ id: i, score });
 		}
 
-		scoreRed = 665624;
-		scoreBlue = 434765;
-		// scoreRed = scores.filter(s => s.id <= 3).map(s => s.score).reduce((a, b) => a + b);
-		// scoreBlue = scores.filter(s => s.id >= 4).map(s => s.score).reduce((a, b) => a + b);
+		// for dev
+		// scoreRed = 665624;
+		// scoreBlue = 434765;
+		scoreRed = scores.filter(s => s.id <= 3).map(s => s.score).reduce((a, b) => a + b);
+		scoreBlue = scores.filter(s => s.id >= 4).map(s => s.score).reduce((a, b) => a + b);
 		let scorediff = Math.abs(scoreRed - scoreBlue);
 
 		animation.red_score.update(scoreRed);
