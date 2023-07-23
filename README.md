@@ -41,6 +41,7 @@
 {"time": 0, "red_team": "redTeam", "blue_team": "blueTeam"}
 ```
 `time` is unix timestamp in milliseconds
+
 `red_team` and `blue_team` must match `teams.json` for correct flag/player lookup
 
 ### winner
