@@ -38,8 +38,10 @@
 
 <sup>*data pulled from `_data/coming_up.json`, requires exchanging between matches. format as below:</sup>
 ```json
-{"time": unix_ms, "red_team": red_team_name, "blue_team": blue_team_name}
+{"time": 0, "red_team": "redTeam", "blue_team": "blueTeam"}
 ```
+`time` is unix timestamp in milliseconds
+`red_team` and `blue_team` must match `teams.json` for correct flag/player lookup
 
 ### winner
 | source           | url/path                        | width | height | x | y   |
